@@ -3,10 +3,10 @@
 window.legMaps = {
   "swim": {
     "zoom": 15,
-    "pxX0": 4359945,
-    "pxY0": 2983154,
-    "width": 411,
-    "height": 485,
+    "pxX0": 4359943,
+    "pxY0": 2983160,
+    "width": 413,
+    "height": 473,
     "src": "assets/maps/swim.png"
   },
   "bike": {

@@ -15,7 +15,13 @@
 </head>
 <body>
   <section class="hero" id="top">
-    <canvas id="viz-canvas" class="hero-canvas"></canvas>
+    <div class="hero-canvas-wrap">
+      <canvas id="viz-canvas" class="hero-canvas"></canvas>
+      <div class="zoom-controls">
+        <button type="button" id="zoom-in" aria-label="Zoomer">+</button>
+        <button type="button" id="zoom-out" aria-label="Dézoomer">−</button>
+      </div>
+    </div>
     <div class="container hero-inner">
       <p class="eyebrow">Champex-Lac → La Fouly · Valais</p>
       <h1>Fouly Triathlon</h1>
@@ -28,10 +34,6 @@
       <div class="hero-actions">
         <a href="#join" class="btn btn-primary">Rejoindre la communauté</a>
       </div>
-    </div>
-    <div class="zoom-controls">
-      <button type="button" id="zoom-in" aria-label="Zoomer">+</button>
-      <button type="button" id="zoom-out" aria-label="Dézoomer">−</button>
     </div>
   </section>
 

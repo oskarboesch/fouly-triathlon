@@ -1,0 +1,9 @@
+{
+  "name": "fouly-triathlon-tools",
+  "private": true,
+  "type": "module",
+  "description": "Build-time only tooling to regenerate js/course-data.js, js/terrain-data.js, and js/leg-maps.js. Not used by the site at runtime.",
+  "dependencies": {
+    "pngjs": "^7.0.0"
+  }
+}

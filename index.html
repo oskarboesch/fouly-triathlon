@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fouly Triathlon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fouly Triathlon — triathlon entre amis, de Champex-Lac à La Fouly, Valais." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <section class="hero" id="top">
+    <canvas id="viz-canvas" class="hero-canvas"></canvas>
+    <div class="container hero-inner">
+      <p class="eyebrow">Champex-Lac → La Fouly · Valais</p>
+      <h1>Fouly Triathlon</h1>
+      <p class="tagline">
+        Un triathlon entre amis, en pleine montagne : natation dans le lac, vélo jusqu'à La Fouly, et course
+        finale dans la vallée.
+      </p>
+      <div class="hero-meta" id="hero-meta"></div>
+      <div class="leg-cards" id="leg-cards"></div>
+      <div class="hero-actions">
+        <a href="#join" class="btn btn-primary">Rejoindre la communauté</a>
+      </div>
+    </div>
+    <div class="zoom-controls">
+      <button type="button" id="zoom-in" aria-label="Zoomer">+</button>
+      <button type="button" id="zoom-out" aria-label="Dézoomer">−</button>
+    </div>
+  </section>
+
+  <div class="leg-modal" id="leg-modal" hidden>
+    <div class="leg-modal-backdrop" data-close-modal></div>
+    <div class="leg-modal-panel" role="dialog" aria-modal="true" aria-labelledby="leg-modal-title">
+      <button type="button" id="leg-modal-close" class="leg-modal-close" data-close-modal aria-label="Fermer">×</button>
+      <div id="leg-modal-content"></div>
+    </div>
+  </div>
+
+  <section class="join" id="join">
+    <div class="container">
+      <h2>Rejoindre la communauté</h2>
+      <p class="section-intro">Choisis ton rôle et rejoins le groupe WhatsApp correspondant.</p>
+      <div class="join-grid" id="join-grid"></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Fouly Triathlon — organisé entre amis.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <script src="js/geo.js"></script>
+  <script src="js/course-data.js"></script>
+  <script src="js/terrain-data.js"></script>
+  <script src="js/leg-maps.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/viz3d.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
